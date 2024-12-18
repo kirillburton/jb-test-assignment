@@ -1,0 +1,9 @@
+<application>
+    <component name="Trusted.Paths">
+        <option name="TRUSTED_PROJECT_PATHS">
+            <map>
+                <entry key="$USER_HOME$/Documents/repos/jb-test-assignment/out/ide-tests/cache/projects/unpacked/SampleLibrary" value="true"/>
+            </map>
+        </option>
+    </component>
+</application>

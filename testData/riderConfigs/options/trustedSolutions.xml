@@ -1,0 +1,10 @@
+<application>
+    <component name="TrustedSolutionStore">
+        <option name="trustedLocations">
+            <set>
+                <option value="$USER_HOME$/Documents/repos/jb-test-assignment/out/ide-tests/cache/projects/unpacked/SampleLibrary"/>
+                <option value="$USER_HOME$/Documents/repos/jb-test-assignment/out/ide-tests/cache/projects/unpacked/SampleLibrary/SampleLibrary/.idea/.idea.SampleLibrary"/>
+            </set>
+        </option>
+    </component>
+</application>
