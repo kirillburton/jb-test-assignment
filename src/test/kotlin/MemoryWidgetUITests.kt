@@ -136,15 +136,5 @@ class MemoryWidgetUITests {
             }
         }
     }
-
-    @Test
-    fun thisTest_ShouldFail() {
-        assertThat("some details").`as`("This should demonstrate failed test annotation").isEqualTo("good information")
-    }
-
-    @Disabled("This should count toward skipped stats")
-    @Test
-    fun thisTest_ShouldBeDisabled() {
-        assertThat(true).isFalse();
-    }
+    
 }

@@ -1,5 +1,5 @@
 # JetBrains Test Assignment
-[![Gradle test](https://github.com/kirillburton/test-ide-ci2/actions/workflows/gradle-test.yml/badge.svg)](https://github.com/kirillburton/test-ide-ci2/actions/workflows/gradle-test.yml)
+[![Gradle test](https://github.com/kirillburton/jb-test-assignment/actions/workflows/gradle-test.yml/badge.svg)](https://github.com/kirillburton/jb-test-assignment/actions/workflows/gradle-test.yml)
 
 ## 📋 Assignment description:
 **Test assignment: Experiment with R# or Rider integration testing.**
@@ -10,7 +10,7 @@
 
 The "Show manage memory in status bar" feature is in the ReSharper -> Options...-> General menu"
 
-![img.png](misc/readme-img2.png)
+![img.png](misc/readme-memory-indicator-widget-img.png)
 
 ---
 
