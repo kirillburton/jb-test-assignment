@@ -22,7 +22,7 @@ It is NOT inteded to provide full feature test coverage, only a skeleton with so
 
 The project then was tuned to run on CI/CD platform - Github Actions in this case.  
 There it reports failed test results with exception information as annotations.  
-See more details in the [CI run](#☁️-ci-run) section.
+See more details in the **CI run** section of this document.
 
 #### Key components:
 - utilizes the driver extension for IDE Starter Framework
@@ -130,7 +130,7 @@ ___
   7. If there are problems with the env variable, but you have license already applied and in your config files, you can just comment out:
      - The [`riderLicenseKey` declaration](../../blob/main/src/test/kotlin/setup/setupHelpers.kt#L28) at the top of `setupHelpers.kt`
      - The [`.setLicense(riderLicenseKey)`](../../blob/main/src/test/kotlin/setup/setupHelpers.kt#L41) line in the `setupTestContext` function
-- Run ```./gradle clean build``` - this should run the tests
+- Run ```./gradlew clean build``` - this should run the tests
 - During the first run on **macOS** you'll be prompted to allow some accessibility options, this is mandatory for local automation execution
 
 ### Windows:

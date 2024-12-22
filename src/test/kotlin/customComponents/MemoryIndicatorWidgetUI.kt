@@ -20,8 +20,6 @@ fun Driver.memoryIndicatorWidget(action: MemoryIndicatorWidgetUI.() -> Unit) {
 
 class MemoryIndicatorWidgetUI(data: ComponentData) : UiComponent(data) {
 
-    private val ideaFrameComponent by lazy { driver.cast(component, IdeFrameImpl::class) }
-
     val memoryUsageText: String
         get() = this.allTextAsString()
 
@@ -41,13 +39,3 @@ class MemoryIndicatorWidgetUI(data: ComponentData) : UiComponent(data) {
         logOutput("GARBAGE CLEAN COMPLETED. MEMORY USAGE AFTER CLEANING: $usedMemory of $totalMemory M")
     } ()
 }
-
-fun Finder.detailsTooltip(@Language("xpath") xpath: String? = null) =
-    x(xpath ?: "//div[@class='Header']", MemoryDetailsTooltipUI::class.java)
-
-
-class MemoryDetailsTooltipUI(data: ComponentData) : UiComponent(data) {
-    val detailedMemoryText = this.allTextAsString()
-}
-
-

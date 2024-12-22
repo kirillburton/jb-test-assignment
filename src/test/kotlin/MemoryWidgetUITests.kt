@@ -1,16 +1,11 @@
-import com.intellij.driver.client.Driver
 import com.intellij.driver.sdk.ui.components.*
 import com.intellij.driver.sdk.ui.shouldBe
-import com.intellij.driver.sdk.ui.ui
 import com.intellij.driver.sdk.waitForIndicators
 import com.intellij.ide.starter.driver.engine.runIdeWithDriver
 import com.intellij.ide.starter.junit5.hyphenateWithClass
 import com.intellij.ide.starter.runner.CurrentTestMethod
-import com.intellij.tools.ide.performanceTesting.commands.CommandChain
-import com.intellij.tools.ide.performanceTesting.commands.startPowerSave
 import customComponents.*
 import org.assertj.core.api.Assertions.*
-import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import setup.*
 import kotlin.time.Duration.Companion.minutes
@@ -55,7 +50,7 @@ class MemoryWidgetUITests {
             }
             ideFrame {
                 popup()
-                    .detailsTooltip().shouldBe(
+                    .memoryDetailsTooltip().shouldBe(
                     "Hovering over Memory Indicator widget should prompt details tooltip to appear"
                 ) { this.isVisible() }
                 // easy to check contents of the tooltip
